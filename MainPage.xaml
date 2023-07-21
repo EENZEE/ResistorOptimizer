@@ -13,10 +13,11 @@
             <ComboBoxItem Content="5%"/>
             <ComboBoxItem Content="2%"/>
             <ComboBoxItem Content="1%"/>
+            <ComboBoxItem Content="0.5%"/>
         </ComboBox>
         <TextBox x:Name="DesiredRatio" HorizontalAlignment="Left" Margin="165,131,0,0" Text="0.5" TextWrapping="Wrap" VerticalAlignment="Top" Width="155" />
-        <TextBox x:Name="TopResistor" HorizontalAlignment="Left" Margin="165,234,0,0" Text="100" TextWrapping="Wrap" VerticalAlignment="Top" Width="155" IsReadOnly="True"/>
-        <TextBox x:Name="SideResistor" HorizontalAlignment="Left" Margin="165,282,0,0" Text="100" TextWrapping="Wrap" VerticalAlignment="Top" IsReadOnly="True" Width="155"/>
+        <TextBox x:Name="BottomResistor" HorizontalAlignment="Left" Margin="165,234,0,0" Text="100" TextWrapping="Wrap" VerticalAlignment="Top" Width="155" IsReadOnly="True"/>
+        <TextBox x:Name="TopResistor" HorizontalAlignment="Left" Margin="165,282,0,0" Text="100" TextWrapping="Wrap" VerticalAlignment="Top" IsReadOnly="True" Width="155"/>
         <TextBox x:Name="ErrorBand" HorizontalAlignment="Left" Margin="166,333,0,0" Text="0" TextWrapping="Wrap" VerticalAlignment="Top" Width="155" />
         <TextBox x:Name="MinimumValue" HorizontalAlignment="Left" Margin="166,412,0,0" Text="0.5" TextWrapping="Wrap" VerticalAlignment="Top" Width="155"/>
         <TextBox x:Name="MaximumValue" HorizontalAlignment="Left" Margin="166,452,0,0" Text="0.5" TextWrapping="Wrap" VerticalAlignment="Top" Width="155" IsReadOnly="True"/>

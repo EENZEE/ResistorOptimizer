@@ -14,6 +14,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using ResistorDivider;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
@@ -77,12 +78,12 @@ namespace ResistorUWP
                     break;
             }
 
-            calculatedValues = resistorDividerEngine.bruteForce(percentage, ratio);
+            calculatedValues = resistorDividerEngine.BruteForce(percentage, ratio);
             TopResistor.Text = calculatedValues.R1.ToString();
-            SideResistor.Text = calculatedValues.R2.ToString();
-            ErrorBand.Text = calculatedValues.error.ToString("E08");
-            MaximumValue.Text = calculatedValues.worstCaseError1.ToString("F04");
-            MinimumValue.Text = calculatedValues.worstCaseError2.ToString("F04");
+            BottomResistor.Text = calculatedValues.R2.ToString();
+            ErrorBand.Text = calculatedValues.Error.ToString("E08");
+            MaximumValue.Text = calculatedValues.WorstCaseError1.ToString("F12");
+            MinimumValue.Text = calculatedValues.WorstCaseError2.ToString("F12");
         }
 
         private async void ErrorDialogBoxPopup(String msg)
