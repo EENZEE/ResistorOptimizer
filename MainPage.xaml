@@ -6,8 +6,8 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-    <Grid>
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Height="540" Width="545">
+    <Grid Margin="0,0,0,44">
         <ComboBox SelectedIndex="3" x:Name="Percentage" Margin="165,94,0,0" Width="87" SelectionChanged="Percentage_SelectionChanged">
             <ComboBoxItem Content="10%"/>
             <ComboBoxItem Content="5%"/>
@@ -22,9 +22,9 @@
         <TextBox x:Name="MinimumValue" HorizontalAlignment="Left" Margin="166,412,0,0" Text="0.5" TextWrapping="Wrap" VerticalAlignment="Top" Width="155"/>
         <TextBox x:Name="MaximumValue" HorizontalAlignment="Left" Margin="166,452,0,0" Text="0.5" TextWrapping="Wrap" VerticalAlignment="Top" Width="155" IsReadOnly="True"/>
         <TextBlock x:Name="Label1" HorizontalAlignment="Left" Margin="24,101,0,0" Text="Resistor Tolerance" TextWrapping="Wrap" VerticalAlignment="Top" />
-        <TextBlock x:Name="Label2" HorizontalAlignment="Left" Margin="24,138,0,0" Text="Desired Ratio" TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <TextBlock x:Name="Label3" HorizontalAlignment="Left" Margin="42,241,0,0" Text="Top Resistor" TextWrapping="Wrap" VerticalAlignment="Top" Width="104"/>
-        <TextBlock x:Name="Label4" HorizontalAlignment="Left" Margin="40,289,0,0" Text="Side Resistor" TextWrapping="Wrap" VerticalAlignment="Top" Width="104"/>
+        <TextBlock x:Name="Label2" HorizontalAlignment="Left" Margin="24,138,0,0" Text="Desired Ratio Vo/Vi" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock x:Name="Label3" HorizontalAlignment="Left" Margin="42,241,0,0" Text="R1" TextWrapping="Wrap" VerticalAlignment="Top" Width="104"/>
+        <TextBlock x:Name="Label4" HorizontalAlignment="Left" Margin="40,289,0,0" Text="R2" TextWrapping="Wrap" VerticalAlignment="Top" Width="104"/>
         <TextBlock x:Name="Label5" HorizontalAlignment="Left" Margin="42,334,0,0" Text="Nominal Error" TextWrapping="Wrap" VerticalAlignment="Top" Width="104"/>
         <TextBlock HorizontalAlignment="Left" Height="20" Margin="39,459,0,0" Text="Max Ratio" TextWrapping="Wrap" VerticalAlignment="Top" Width="104"/>
         <TextBlock HorizontalAlignment="Left" Height="19" Margin="41,419,0,0" Text="Min Ratio" TextWrapping="Wrap" VerticalAlignment="Top" Width="104"/>
@@ -32,5 +32,6 @@
         <TextBlock HorizontalAlignment="Left" Margin="41,381,0,0" Text="Error Band Due to Resistor Tolerance" TextWrapping="Wrap" VerticalAlignment="Top" Width="262" FontWeight="ExtraBlack" />
         <TextBlock HorizontalAlignment="Left" Margin="50,38,0,0" FontWeight="ExtraBlack" Text="Optimal Resistor Divider Calculator" TextWrapping="Wrap" VerticalAlignment="Top" Width="248"/>
         <TextBlock HorizontalAlignment="Left" Margin="112,211,0,0" Text="Calculated Values" FontWeight="ExtraBlack" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <Image Height="256" Margin="376,232,54,0" VerticalAlignment="Top" Source="/Assets/ResistorDividerBW.png"/>
     </Grid>
 </Page>
